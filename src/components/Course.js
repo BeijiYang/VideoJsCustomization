@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import VideoPlayer from './VideoPlayer'
+import VideoPlayer from './VideoPlayer/VideoPlayer'
 
 class Course extends Component {
   render() {
@@ -14,7 +14,6 @@ class Course extends Component {
 
     return (
       <div className="course">
-          <h2>Course</h2>
           <VideoPlayer { ...videoJsOptions } />
       </div>
     );
