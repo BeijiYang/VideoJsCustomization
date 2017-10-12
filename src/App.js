@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Course from './components/Course'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <h1>Welcome to React</h1>
+      <div className="app">
+          <Course />
       </div>
     );
   }
