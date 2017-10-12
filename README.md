@@ -6,3 +6,6 @@
   * 全局安装Grunt $ npm install -g grunt-cli
 
 * create-react-app 创建初始项目，删去没用的代码
+
+* 安装video.js
+  * $ npm install --save-dev video.js
