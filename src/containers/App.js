@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CourseContainer from './containers/CourseContainer'
+import CourseContainer from './CourseContainer'
 
 class App extends Component {
   render () {

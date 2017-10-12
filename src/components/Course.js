@@ -2,25 +2,12 @@ import React, { Component } from 'react'
 import VideoPlayer from '../lib/VideoPlayer/VideoPlayer'
 
 class Course extends Component {
-  render () {
-    const videoJsOptions = {
-      autoplay: false,
-      controls: true,
-      sources: [{
-        src: 'http://vjs.zencdn.net/v/oceans.mp4',
-        type: 'video/mp4'
-      }],
-      poster: 'http://videojs.com/img/logo.png',
-      controlBar: {
-        volumePanel: {
-          inline: false // vertical VolumeControl
-        }
-      }
-    }
 
+  render () {
     return (
-      <div className='course'>
-        <VideoPlayer {...videoJsOptions} />
+      <div className='course-container'>
+        <h2>CourseDemo</h2>
+        <VideoPlayer {...this.props.videoJsOptions} />
       </div>
     )
   }

@@ -3,11 +3,25 @@ import Course from '../components/Course'
 
 class CourseContainer extends Component {
   render () {
+    // VideoJsOptions for this Course
+    const CourseVideoJsOptions = {
+      autoplay: false,
+      controls: true,
+      sources: [{
+        src: 'http://vjs.zencdn.net/v/oceans.mp4',
+        type: 'video/mp4'
+      }],
+      poster: 'http://videojs.com/img/logo.png',
+      width: '500px',
+      controlBar: {
+        volumePanel: {
+          inline: false // vertical VolumeControl
+        }
+      }
+    }
+
     return (
-      <div className='course-container'>
-        <h2>CourseDemo</h2>
-        <Course />
-      </div>
+      <Course videoJsOptions={CourseVideoJsOptions} />
     )
   }
 }
