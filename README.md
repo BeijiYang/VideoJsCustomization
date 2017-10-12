@@ -20,9 +20,11 @@
 
 * 用options实现倍速播放，音量条竖直等等
 
-* 用[这个方法]()进行样式的自定制
+* 用[这篇文档的Customize Styles部分](http://docs.videojs.com/tutorial-skins.html)进行样式的自定制
   * 为video实例增加属性
+    * `<video ref={node => this.videoNode = node} className='video-js vjs-hqcat' />`
   * 增加自定制样式文件
+    *  `videojs-hqcat.css`
 
 * 修改播放按键
   * 居中
