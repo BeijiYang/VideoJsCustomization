@@ -1,7 +1,7 @@
 import React from 'react'
 import videojs from 'video.js'
 import 'video.js/dist/video-js.css'
-import 'video.js/dist/videojs-hqcat.css'
+import './videojs-hqcat.css'
 
 export default class VideoPlayer extends React.Component {
   componentDidMount () {
