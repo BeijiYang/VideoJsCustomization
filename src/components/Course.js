@@ -10,9 +10,10 @@ class Course extends Component {
         src: 'http://vjs.zencdn.net/v/oceans.mp4',
         type: 'video/mp4'
       }],
+      poster: 'http://videojs.com/img/logo.png',
       controlBar: {
         volumePanel: {
-          inline: false
+          inline: false // vertical VolumeControl
         }
       }
     }
