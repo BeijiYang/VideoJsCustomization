@@ -12,7 +12,6 @@ class CourseContainer extends Component {
         type: 'video/mp4'
       }],
       poster: 'http://videojs.com/img/logo.png',
-      width: '500px',
       controlBar: {
         volumePanel: {
           inline: false // vertical VolumeControl
