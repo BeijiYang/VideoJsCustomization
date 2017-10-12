@@ -1,6 +1,7 @@
 import React from 'react'
 import videojs from 'video.js'
 import 'video.js/dist/video-js.css'
+import 'video.js/dist/videojs-hqcat.css'
 
 export default class VideoPlayer extends React.Component {
   componentDidMount () {
@@ -23,7 +24,7 @@ export default class VideoPlayer extends React.Component {
   render () {
     return (
       <div data-vjs-player>
-        <video ref={node => this.videoNode = node} className='video-js' />
+        <video ref={node => this.videoNode = node} className='video-js vjs-hqcat' />
       </div>
     )
   }
