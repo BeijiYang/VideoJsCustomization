@@ -1,3 +1,4 @@
+/*居中按钮*/
 .vjs-hqcat .vjs-big-play-button {
   height: 1.5em;
   width: 3em;
@@ -5,13 +6,23 @@
   top: 50%;
   margin-left: -1.5em;
   margin-top: -0.75em;
-  border-color: rgb(0, 188, 212);
-  color: rgb(0, 188, 212);
   /*margin-left: -($big-play-width / 2);
   margin-top: -($big-play-height / 2);*/
+  border-color: rgb(0, 188, 212);
+}
+
+/*颜色*/
+.vjs-hqcat.video-js {
+  color: rgb(0, 188, 212);
 }
 
 .vjs-hqcat:hover .vjs-big-play-button,
 .vjs-hqcat .vjs-big-play-button:focus {
   border-color: rgb(0, 188, 212);
+}
+
+.vjs-hqcat .vjs-volume-level,
+.vjs-hqcat .vjs-play-progress,
+.vjs-hqcat .vjs-slider-bar {
+  background:rgb(0, 188, 212);
 }
