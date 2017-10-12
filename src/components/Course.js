@@ -9,7 +9,12 @@ class Course extends Component {
       sources: [{
         src: 'http://vjs.zencdn.net/v/oceans.mp4',
         type: 'video/mp4'
-      }]
+      }],
+      controlBar: {
+        volumePanel: {
+          inline: false
+        }
+      }
     }
 
     return (
