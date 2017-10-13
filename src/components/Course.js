@@ -5,7 +5,6 @@ import styled from 'styled-components'
 const VideoPlayerWrap = styled.div`
   margin: 10px;
   padding: 10px;
-  ${'' /* border: 2px solid green; */}
 `
 
 const PWrap = styled.div`
@@ -13,7 +12,6 @@ const PWrap = styled.div`
   font-size: 20px;
   font-weight: bold;
 `
-
 
 class Course extends Component {
 
