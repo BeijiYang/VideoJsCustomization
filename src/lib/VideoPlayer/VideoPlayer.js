@@ -65,6 +65,11 @@ export default class VideoPlayer extends React.Component {
       this.on('timeupdate', function(e){
         that.refs.videoPlayerRef.focus()
       })
+
+      this.on('ended', function (e) {
+        console.log('this episode ends now!!!')
+        // some code to navigate to next episode page
+      })
     }
 
     // Registering A Plugin
