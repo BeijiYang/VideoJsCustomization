@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import Course from '../components/Course'
 
 class CourseContainer extends Component {
+
   render () {
+
     // VideoJsOptions for this Course
     const CourseVideoJsOptions = {
       autoplay: false,
@@ -18,11 +20,22 @@ class CourseContainer extends Component {
         volumePanel: {
           inline: false // vertical VolumeControl
         }
+      },
+      // Using A Plugin
+      plugins: {
+        examplePlugin: {
+          exampleOption: true,
+        }
+        // handleKeyPress: {
+        //   // handleKeyPress: true
+        // }
       }
     }
 
     return (
-      <Course videoJsOptions={CourseVideoJsOptions} />
+      <Course
+        videoJsOptions={CourseVideoJsOptions}
+      />
     )
   }
 }
