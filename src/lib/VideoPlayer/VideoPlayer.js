@@ -24,7 +24,6 @@ export default class VideoPlayer extends React.Component {
       event.preventDefault()
       console.log(this.player.state.state)
       if (this.player) {
-
         switch (this.player.state.state) {
           case 'playing':
           this.player.pause()
