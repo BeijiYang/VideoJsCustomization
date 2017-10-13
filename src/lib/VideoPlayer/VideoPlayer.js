@@ -46,7 +46,7 @@ export default class VideoPlayer extends React.Component {
   render () {
     // write a plugin
     var that = this
-    const setStatePlugin = function (options) {
+    const setStateandFocusPlugin = function (options) {
       this.on('play', function (e) {
         console.log('playback has started!')
         console.log(that)
@@ -70,7 +70,7 @@ export default class VideoPlayer extends React.Component {
     }
 
     // Registering A Plugin
-    videojs.registerPlugin('setStatePlugin', setStatePlugin)
+    videojs.registerPlugin('setStateandFocusPlugin', setStateandFocusPlugin)
     // videojs.registerPlugin('handleKeyPress', handleKeyPress)
 
     return (

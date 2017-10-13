@@ -22,7 +22,7 @@ class CourseContainer extends Component {
       },
       // Using A Plugin
       plugins: {
-        setStatePlugin: true
+        setStateandFocusPlugin: true
       }
     }
 
