@@ -22,7 +22,8 @@ export default class VideoPlayer extends React.Component {
   handleSpaceKeyDown = (event) => {
     if (event.which === 32) {
       event.preventDefault()
-      console.log(this.player.state.state)
+      // console.log(this.player.state.state)
+
       if (this.player) {
         switch (this.player.state.state) {
           case 'playing':
@@ -48,7 +49,7 @@ export default class VideoPlayer extends React.Component {
     const setStateandFocusPlugin = function (options) {
       this.on('play', function (e) {
         console.log('playback has started!')
-        console.log(that)
+        // console.log(that)
         this.setState({
           state: 'playing'
         })
@@ -68,7 +69,6 @@ export default class VideoPlayer extends React.Component {
 
     // Registering A Plugin
     videojs.registerPlugin('setStateandFocusPlugin', setStateandFocusPlugin)
-    // videojs.registerPlugin('handleKeyPress', handleKeyPress)
 
     return (
       <div data-vjs-player
