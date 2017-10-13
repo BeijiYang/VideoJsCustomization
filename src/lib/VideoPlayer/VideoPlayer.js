@@ -62,6 +62,11 @@ export default class VideoPlayer extends React.Component {
           state: 'pause'
         })
       })
+
+      this.on('timeupdate', function(e){
+        console.log("timeupdate");
+        that.refs.videoPlayerRef.focus()
+      })
     }
 
     // Registering A Plugin
