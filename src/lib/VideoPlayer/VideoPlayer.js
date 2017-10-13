@@ -53,7 +53,6 @@ export default class VideoPlayer extends React.Component {
         this.setState({
           state: 'playing'
         })
-        that.refs.videoPlayerRef.focus()
       })
 
       this.on('pause', function (e) {
@@ -64,7 +63,6 @@ export default class VideoPlayer extends React.Component {
       })
 
       this.on('timeupdate', function(e){
-        console.log("timeupdate");
         that.refs.videoPlayerRef.focus()
       })
     }
