@@ -591,7 +591,7 @@ const setStateandFocusPlugin = function (options) {
 
 
 
-**--------------------更新中--------------------**
+**-----------------------------------更新中-----------------------------------**
 [讲解文字稿](https://github.com/BeijiYang/VideoJsCustomization/blob/master/IntroMarkDown/%E6%96%87%E5%AD%97%E7%A8%BF.md)
 
 ### GET STARTED
