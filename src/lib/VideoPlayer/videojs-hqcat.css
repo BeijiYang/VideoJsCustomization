@@ -27,6 +27,7 @@
   background:rgb(0, 188, 212);
 }
 
+/*控制栏字体*/
 .vjs-hqcat .vjs-control-bar {
   font-size: small;
 }
@@ -44,3 +45,10 @@
   font-size: small;
   line-height: 3em;
 }
+
+/*完善倍速选择器样式*/
+.vjs-menu li.vjs-selected,
+.vjs-menu li.vjs-selected:focus,
+.vjs-menu li.vjs-selected:hover {
+  background-color: #2B333F;
+  color: rgb(0, 188, 212); }
