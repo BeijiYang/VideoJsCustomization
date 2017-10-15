@@ -661,7 +661,38 @@ const setStateandFocusPlugin = function (options) {
 
 ```
 
-这下顺眼多了！
+这下颜色顺眼多了！
+
+还有些小问题，比如控制栏的字体大小，以及倍速选择栏的样式等。同理，找到相应的class名，在新皮肤文件中添加代码如下：
+
+**src/lib/VideoPlayer/videojs-hqcat.css**
+```
+/*控制栏字体*/
+.vjs-hqcat .vjs-control-bar {
+  font-size: small;
+}
+
+.vjs-hqcat .vjs-menu-item {
+  font-size: small;
+}
+
+.vjs-hqcat li.vjs-selected {
+  background-color:rgb(0, 188, 212);
+}
+
+.vjs-hqcat .vjs-playback-rate-value {
+  font-size: small;
+  line-height: 3em;
+}
+
+/*完善倍速选择器样式*/
+.vjs-menu li.vjs-selected,
+.vjs-menu li.vjs-selected:focus,
+.vjs-menu li.vjs-selected:hover {
+  background-color: #2B333F;
+  color: rgb(0, 188, 212); }
+
+```
 
 创建自定制皮肤文件成功！
 
@@ -700,7 +731,7 @@ const setStateandFocusPlugin = function (options) {
   * 居中
   * 颜色
 
-* 修改controlBar颜色
+* 修改 controlBar 颜色
 
 * 实现空格键暂停/播放
   * 原本默认行为是 仅在播放按钮被选中时，按键可以控制播放/暂停，不论全屏与否；
@@ -710,3 +741,7 @@ const setStateandFocusPlugin = function (options) {
       * 对策：
         * 当视频播放的过程中，不论鼠标点哪里，都让焦点保持在播放器，以便通过空格键控制
         * 当视频处于暂停状态，可以通过鼠标点击等行为切换焦点
+
+* 完善了 controlBar 样式的细节问题
+  * 字体大小
+  * 倍速选择框样式
