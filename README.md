@@ -48,7 +48,7 @@ npm install --save-dev video.js
 
 对于如何在 React 项目中使用 video.js ，官方文档就这一篇：[ video.js  and  ReactJS integration](http://docs.videojs.com/tutorial-React.html)
 
-我们参考文档中的基本方法，主要思路就是利用 React 组件的声明周期函数：
+我们参考文档中的基本方法，主要思路就是利用 React 组件的生命周期函数：
 * 在 `componentDidMount` 阶段实例化一个 video.js 播放器
 * 在 `componentWillUnmount` 阶段将其销毁
 
