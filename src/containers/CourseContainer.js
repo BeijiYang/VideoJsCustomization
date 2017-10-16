@@ -11,9 +11,6 @@ class CourseContainer extends Component {
       sources: [{
         src: 'http://vjs.zencdn.net/v/oceans.mp4',
         type: 'video/mp4'
-      }, {
-        src: 'http://vjs.zencdn.net/v/oceans.webm',
-        type: 'video/webm'
       }],
       poster: 'http://videojs.com/img/logo.png',
       fluid: 'true', // put the player in the VideoPlayerWrap box
