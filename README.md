@@ -704,8 +704,17 @@ const setStateandFocusPlugin = function (options) {
 创建自定制皮肤文件成功！
 
 
+### 7-总结
 
-**-----------------------------------更新中-----------------------------------**
+在这个案例中，我们在 React 项目里引入 video.js，实现了自定制的 HTML5 视频播放器。
+
+我们在播放器默认设置的基础之上，
+* 通过 options 控制现有功能；
+* 通过 plugins 扩展添加了自己想要的新功能；
+* 通过增加新的皮肤样式文件实现了外观的自定制。
+
+
+-----------------------------------------------
 [讲解文字稿](https://github.com/BeijiYang/VideoJsCustomization/blob/master/IntroMarkDown/%E6%96%87%E5%AD%97%E7%A8%BF.md)
 
 ### GET STARTED
@@ -727,6 +736,7 @@ const setStateandFocusPlugin = function (options) {
 * 把相对独立的VideoPlayer组件放到`Lib/`里
 
 * 用options实现倍速播放，音量条竖直等等
+  * 跨浏览器兼容问题：多格式视频源
 
 * 用[这篇文档的Customize Styles部分](http://docs.videojs.com/tutorial-skins.html)进行样式的自定制
   * 为video实例增加属性
